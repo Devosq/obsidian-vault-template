@@ -44,4 +44,4 @@ Talous, Dokumentaatio). Claude Code writes session summaries into Päiväkirja a
 reads Strategia for context (wire this via your `CLAUDE.md`).
 
 ## License
-[MIT](./LICENSE) © Devosq
+[MIT](./LICENSE) © Oscar Vatanen
