@@ -8,12 +8,29 @@ templates only.
 > strategy docs, projects, contacts, or financial data — only the empty folder
 > taxonomy and reusable note templates. Shared privately for reference.
 
+## The vault, and how Claude uses it
+
+```mermaid
+flowchart TD
+    subgraph VAULT["Vault taxonomy"]
+        OPS["Operational<br/>Projektit · Tehtävät · Inbox"]
+        REF["Reflective<br/>Päiväkirja · Strategia"]
+        DATA["Reference<br/>Kontaktit · Talous · Dokumentaatio"]
+    end
+    TPL["Templates/<br/>Asiakas · Tarjous · Lasku · Työmaa · Päivittäinen"] -->|new note| OPS
+    CLAUDE["Claude Code"] -->|writes session summary| REF
+    CLAUDE -->|reads context| REF
+    REQ["⚠️ Requires Templater + Dataview<br/>see REQUIRED-PLUGINS.md"] -.-> TPL
+```
+
 ## What's inside
 
 | Path | What it is |
 |------|------------|
 | `Templates/` | 6 reusable note templates (in Finnish): `Asiakas.md` (customer), `Tarjous.md` (bid/quote), `Lasku.md` (invoice), `Työmaa.md` (job site), `Päivittäinen.md` (daily note), `Claude-sessio.md` (Claude session log). |
 | `structure/` | The folder taxonomy as empty `.gitkeep` scaffolding: Projektit, Strategia, Päiväkirja, Kontaktit, Talous, Inbox, Ideat, Tutkimus, Tehtävät, Kehitys, Dokumentaatio, Arkisto, 10_BRIEFS. |
+| `REQUIRED-PLUGINS.md` | Which Obsidian community plugins the templates need (Templater, Dataview) and how to set them up — **read this first**. |
+| `.obsidian-community-plugins.json` | The essential plugin IDs, ready to merge into your vault's `.obsidian/community-plugins.json`. |
 
 ## How to use
 1. Copy `structure/` folders into a new Obsidian vault to get the taxonomy.
