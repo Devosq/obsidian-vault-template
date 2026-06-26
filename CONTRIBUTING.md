@@ -1,12 +1,9 @@
 # Contributing
 
-This is a personal configuration shared privately for reference and reuse.
+Contributions and adaptations are welcome!
 
-## Conventions
-- **Branches:** `feat/...`, `fix/...`, `docs/...` off `main`.
-- **Commits:** [Conventional Commits](https://www.conventionalcommits.org/), English.
-- **No secrets:** never commit real keys, tokens, IPs, or `.env` files. Use placeholders.
-
-## Adapting for your own setup
-Replace placeholders (`<USERNAME>`, `<VPS1_IP>`, `<SUPABASE_PROJECT_REF>`, etc.)
-with your own values in a local copy. Keep secrets in `.env` (git-ignored).
+## Guidelines
+- This is a collection of patterns/templates for [Claude Code](https://claude.com/claude-code).
+  Improvements, fixes, and new examples are welcome.
+- Keep it generic — no personal/business specifics or secrets.
+- Conventional Commits, English.

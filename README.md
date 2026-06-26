@@ -6,7 +6,6 @@ templates only.
 
 > 🔒 **No personal content.** This repo deliberately contains **no** diary,
 > strategy docs, projects, contacts, or financial data — only the empty folder
-> taxonomy and reusable note templates. Shared privately for reference.
 
 ## The vault, and how Claude uses it
 
@@ -42,7 +41,7 @@ flowchart TD
 The vault separates **operational** notes (Projektit, Tehtävät, Inbox) from
 **reflective** notes (Päiväkirja, Strategia) and **reference** (Kontaktit,
 Talous, Dokumentaatio). Claude Code writes session summaries into Päiväkirja and
-reads Strategia for context — see the `claude-md-template` repo for that wiring.
+reads Strategia for context (wire this via your `CLAUDE.md`).
 
 ## License
-Proprietary — see [LICENSE](./LICENSE). Shared privately, no public redistribution.
+[MIT](./LICENSE) © Oscar Vatanen
