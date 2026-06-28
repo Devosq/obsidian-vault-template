@@ -1,0 +1,16 @@
+# Normalize line endings to LF on checkin; check out as-is.
+* text=auto eol=lf
+
+# Explicitly treat documentation/config as text.
+*.md       text eol=lf
+*.json     text eol=lf
+*.gitkeep  text eol=lf
+.editorconfig text eol=lf
+
+# Binary assets (no diff / no EOL conversion).
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.webp binary
